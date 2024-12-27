@@ -1,0 +1,159 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-size: cover;
+    background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: cover;
+    background-image: url("img/bg.svg");
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weatherForm{
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 0;
+    display: flex;
+}
+
+.all{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cityInput::placeholder {
+    color: rgb(255, 255, 255, 0.7);
+    font-family: "Montserrat", serif;
+    font-size: 30px;
+}
+
+.cityInput{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: medium;
+    border: none;
+    border-top-left-radius: 20px 20px;
+    width: 100%;
+    background-color: #203349;
+    outline: none;
+}
+
+.cityInput:focus{
+    color: white;
+    font-family: "Montserrat", serif;
+}
+
+button[type='submit']{
+    background-color: #203349;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 20px 20px;
+    margin-left: auto;
+    width: 68px;
+    height: 64px;
+    margin-left: 20px;
+}
+
+button[type='submit']:hover{
+    background-color: hsla(212, 39%, 21%, 0.9);
+}
+
+.card{
+    background: rgb(28,48,71);
+    background: linear-gradient(150deg, rgba(28,48,71,1) 0%, rgb(108, 123, 140) 100%);
+    padding: 40px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border-bottom-right-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+}
+
+h1{
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: white;
+}
+
+p{
+    font-size: 1.5rem;
+    margin: 5px 0;
+    color: hsla(0, 0%, 100%, 0.7);
+}
+
+.cityDisplay{
+    font-size: 50px;
+}
+
+.tempDisplay{
+    font-size: 150px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1;
+    margin-top: 20px;
+}
+
+.humidityDisplay{
+    font-weight: medium;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.descDisplay {
+    font-weight: medium;
+    font-size: 25px;
+}
+
+.descDisplay{
+    font-weight: medium;
+    font-size: 25px;
+}
+
+h2{
+    margin: 0;
+    font-size: 7.5rem;
+    line-height: 1;
+}
+
+.weatherEmoji {
+    margin: 0;
+    font-size: 7.5rem;
+    line-height: 1;
+}
+
+
+.errorDisplay{
+    font-size: 1.5rem;
+    margin: 5px 0;
+    font-weight: semi-bold;
+    color: hsla(0, 0%, 100%);
+}
+
+@media screen and (max-width: 850px){
+
+    .card{
+        background: rgb(28,48,71);
+        background: linear-gradient(150deg, rgba(28,48,71,1) 0%, rgb(108, 123, 140) 100%);
+        padding: 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        border-bottom-right-radius: 20px 20px;
+        border-bottom-left-radius: 20px 20px;
+    }
+}
