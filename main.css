@@ -144,7 +144,27 @@ h2{
 }
 
 @media screen and (max-width: 850px){
-
+    .tempDisplay{
+        font-size: 80px;
+        line-height: 0.8;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    .cityDisplay{
+        font-size: 25px;
+    }
+    .humidityDisplay{
+        font-weight: medium;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    p{
+        font-size: 18px;
+    }
+    .descDisplay {
+        font-weight: medium;
+        font-size: 18px;
+    }
     .card{
         background: rgb(28,48,71);
         background: linear-gradient(150deg, rgba(28,48,71,1) 0%, rgb(108, 123, 140) 100%);
@@ -155,5 +175,21 @@ h2{
         align-items: left;
         border-bottom-right-radius: 20px 20px;
         border-bottom-left-radius: 20px 20px;
+    }
+    .cityInput::placeholder {
+        font-size: 25px;
+    }
+    
+    .cityInput{
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 20px;
+        font-size: 25px;
+        font-weight: medium;
+        border: none;
+        border-top-left-radius: 20px 20px;
+        width: 100%;
+        background-color: #203349;
+        outline: none;
     }
 }
